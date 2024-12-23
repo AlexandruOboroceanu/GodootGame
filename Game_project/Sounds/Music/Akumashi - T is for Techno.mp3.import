@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://be0esru887ie2"
+path="res://.godot/imported/Akumashi - T is for Techno.mp3-3c5e7bc55c4be74be24b1af76a2630ae.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/Akumashi - T is for Techno.mp3"
+dest_files=["res://.godot/imported/Akumashi - T is for Techno.mp3-3c5e7bc55c4be74be24b1af76a2630ae.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

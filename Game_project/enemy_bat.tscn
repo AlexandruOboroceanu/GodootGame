@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddq8uts4duvr7"]
+
+[ext_resource type="Texture2D" uid="uid://dfgwhdng130xd" path="res://Art/Self Made/Enemys/Bat.png" id="1_7cbak"]
+[ext_resource type="Script" path="res://enemy_bat.gd" id="1_wtumi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cwm3l"]
+height = 20.0
+
+[node name="enemy_bat" type="CharacterBody2D"]
+position = Vector2(-30, 17)
+script = ExtResource("1_wtumi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_cwm3l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.111607, 0.09375)
+texture = ExtResource("1_7cbak")

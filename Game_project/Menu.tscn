@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://vqqp4fe71ld1"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_jkxyc"]
+
+[sub_resource type="Theme" id="Theme_s6w3p"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_left = 0.465
+anchor_top = 0.352
+anchor_right = 1.0
+anchor_bottom = 0.61
+offset_left = -19.0
+offset_top = -11.8
+offset_right = 21.0
+offset_bottom = 28.2
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_s6w3p")
+script = ExtResource("1_jkxyc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -2.0
+offset_right = 87.0
+offset_bottom = 99.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
